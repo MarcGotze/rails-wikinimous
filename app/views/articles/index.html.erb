@@ -1,0 +1,14 @@
+<nav>
+<h1>Title</h1>
+<%= link_to "New Article" %>
+</nav>
+
+<div id="container">
+  <ul>
+    <% @articles.each do |article| %>
+    <div class="box">
+      <li><%= link_to article.title %></li>
+    </div>
+    <% end %>
+  </ul>
+</div>
